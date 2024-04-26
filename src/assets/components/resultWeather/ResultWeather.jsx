@@ -13,8 +13,6 @@ const ResultCity = ({ data }) => {
             .catch(error => alert("Ooops, something was wrong"));
     }, [data]);
 
-    if (weather) console.log(weather)
-
     return (
         weather && 
         <div className="weather">
