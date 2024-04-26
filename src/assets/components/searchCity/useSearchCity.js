@@ -11,7 +11,7 @@ const useSearchCity = () => {
             if (city === null) return
 
             const API_KEY = "1f0194f475d6dd822d0979ba522cfe34"
-            const url = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_KEY}`;
+            const url = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${API_KEY}`;
                  
             const response = await fetch(url);
             const result = await response.json();
