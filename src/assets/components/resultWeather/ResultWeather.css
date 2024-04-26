@@ -1,0 +1,110 @@
+.weather {
+    background-color: #fff;
+    width: 100%;
+    max-width: 350px;
+    margin: 50px auto 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.weather__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6f85dd;
+    padding: 20px;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: #fff;
+}
+
+.weather__header__texts-title {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.weather__header__texts span {
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.weather__header__texts span::first-letter {
+    text-transform: uppercase;
+}
+
+.weather__header-icon {
+    width: 100px;
+}
+
+.weather__details {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather__details-temperature {
+    font-weight: 800;
+    font-size: 45px;
+    text-align: center;
+}
+
+.weather__details__texts {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2px;
+}
+
+.weather__details__texts-title {
+    font-weight: 600;
+    border-bottom: 2px solid #6f85dd;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.weather__details__texts-subtitle {
+    font-size: 14px;
+}
+
+.weather__details__texts-subtitle span {
+    font-weight: 600;
+}
+
+
+
+/* No result */
+.no-result {
+    margin: 50px auto 0;
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(218, 26, 26);
+}
+
+.no-result svg {
+    width: 100px;
+    fill: rgb(218, 26, 26);
+}
+
+
+@media screen and (max-width: 350px) {
+    .weather__header {
+        flex-direction: column;
+    }
+
+    .weather__header-icon {
+        width: 150px;
+    }
+}
